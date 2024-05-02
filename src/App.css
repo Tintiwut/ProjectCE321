@@ -1,38 +1,147 @@
-.App {
+
+body {
+  z-index: -1;
+  background-image: url(bg7.gif);
+  background-size: 1500px 768px;
+  font-family: 'JasmineUPC', sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+div.transbox {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1px);
+  border: 1.5px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 0.5rem;
+
+}
+
+.container { 
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
+  color: black;
+  font-size: 30px;
+  text-decoration: underline; 
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button[type="clearBtn"] {
+  background-color: transparent;
+  cursor: pointer; 
+  color: red;
+  text-decoration: underline;
+  font-size: 13px;
+  border-radius: 25px;
+  border: none; 
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button[type="Btn"]{
+  background-color: #99FF99; 
+  color: white; 
+  padding: 10px 50px; 
+  text-align: center; 
+  display: inline-block; 
+  font-size: 20px; 
+  margin: 3px 2px; 
+  cursor: pointer; 
+  border-radius: 15px; 
+  margin-top: 10px;  
+  margin-left: 40px;
+  width: 200px;
+  height: 40px;
+  font-family: 'JasmineUPC', sans-serif;
+  text-shadow:    -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button[type="BtnR"]{
+  font-family: 'JasmineUPC', sans-serif;
+  background-color: #990033; 
+  color: white; 
+  padding: 10px 50px; 
+  text-align: center; 
+  display: inline-block; 
+  font-size: 20px; 
+  margin: 3px 2px; 
+  cursor: pointer; 
+  border-radius: 15px; 
+  margin-top: 10px;  
+  margin-left: 40px;
+  width: 200px;
+  height: 40px;
+  text-shadow:    -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-btn {
+  background-color: transparent;
+  cursor: pointer; 
+  color: red;
+  text-decoration: underline;
+  font-size: 13px;
+  border-radius: 25px;
+  border: none; 
+  text-shadow:    -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px 1px 0 #000,
+                  1px 1px 0 #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button[type="clearABtn"]{
+  font-family: 'JasmineUPC', sans-serif;
+  font-size: 17px; 
+  background-color: #CC9900;
+}
+
+p[type="in"] {
+  color: #99FF99;
+  font-weight: bold;
+  text-shadow:    -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px 1px 0 #000,
+                  1px 1px 0 #000;
+
+}
+
+p[type="ex"] {
+  color: #CC0000;
+  font-weight: bold;
+  text-shadow:    -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px 1px 0 #000,
+                  1px 1px 0 #000;
+}
+
+div[type="re"] {
+  color: #CC9900;
+  font-weight: bold;
+  text-shadow:    -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px 1px 0 #000,
+                  1px 1px 0 #000;
+}
+
+#error-message {
+color: red;
+font-weight: bold;
+font-size: larger;
 }
