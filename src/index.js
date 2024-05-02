@@ -17,7 +17,7 @@ const result = document.getElementById('result');
 
 const title = document.getElementById('title');
 
-const Ask = document.getElementById('Ask');
+const ask = document.getElementById('Ask');
 
 const clearLocalStorageBtn = document.getElementById('clearLocalStorageBtn');
 
@@ -273,7 +273,7 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
         updateBalance();
     };
 
-    Ask.addEventListener('click', function() {
+    ask.addEventListener('click', function() {
         window.alert('************วิธีการใช้งาน************' + `\n กดปุ่มรายการ 1 ครั้ง : พูดสิ่งที่อยากบันทึก \n กดปุ่มราคา 1 ครั้ง : พูดราคาที่ต้องการบันทึก` + 
         `\n กดปุ่มบันทึก : เพื่อบันทึกข้อมูล\n กดปุ่มลบรายการ : เพื่อแก้ไขสิ่งที่จะบันทึก \n กดปุ่มล้างข้อมูล : เพื่อล้างข้อมูลที่บันทึกไว้`);
     });
