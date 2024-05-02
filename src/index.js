@@ -1,5 +1,3 @@
-import './index.css';
-
 /*-----------------------------------------------------------------------------------------------*/  
 // กำหนดตัวแปรสำหรับการใช้งาน
 const startIncomeCategoryBtn = document.getElementById('startIncomeCategoryBtn');
@@ -13,11 +11,13 @@ const startExpenseSaveBtn = document.getElementById('startExpenseSaveBtn');
 const outputExpenseList = document.getElementById('outputExpenseList');
 
 const outputTransactionList = document.getElementById('outputTransactionList');
-//const totalIncome = document.getElementById('totalIncome');
-//const totalExpense = document.getElementById('totalExpense');
+const totalIncome = document.getElementById('totalIncome');
+const totalExpense = document.getElementById('totalExpense');
 const result = document.getElementById('result');
-const Ask = document.getElementById('Ask');
+
 const title = document.getElementById('title');
+
+const Ask = document.getElementById('Ask');
 
 const clearLocalStorageBtn = document.getElementById('clearLocalStorageBtn');
 
@@ -66,7 +66,7 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
         }
     };
 
-    // เมื่อคลิกที่ปุ่ม "พูดราคา" รายรับ
+    // เมื่อคลิกที่ปุ่ม "พูดประเภท" รายรับ
     startIncomeCategoryBtn.addEventListener('click', function() {
         recognitionIncomeCategory.start();
     });
@@ -275,9 +275,9 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
 
     Ask.addEventListener('click', function() {
         window.alert('************วิธีการใช้งาน************' + `\n กดปุ่มรายการ 1 ครั้ง : พูดสิ่งที่อยากบันทึก \n กดปุ่มราคา 1 ครั้ง : พูดราคาที่ต้องการบันทึก` + 
-        `\n กดปุ่มบันทึก : เพื่อบันทึกข้อมูล\n กดปุ่มลบรายการ : เพื่อแก้ไขสิ่งที่จะบันทึก \n กดปุ่มล้างข้อมูล : เพื่อล้างข้อมูลที่บันทึกไว้` +
-        '\n Note : MobilePhone อาจใช้เวลานานในการใช้งาน API โปรดรอเมื่อกดปุ่ม');
+        `\n กดปุ่มบันทึก : เพื่อบันทึกข้อมูล\n กดปุ่มลบรายการ : เพื่อแก้ไขสิ่งที่จะบันทึก \n กดปุ่มล้างข้อมูล : เพื่อล้างข้อมูลที่บันทึกไว้`);
     });
+
 
 } else {
     // แสดงข้อความแจ้งเตือนเมื่อเบราว์เซอร์ไม่รองรับ Web Speech API

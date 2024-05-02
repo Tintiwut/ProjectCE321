@@ -30,7 +30,7 @@ div.transbox {
 }
 
 h2 {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 10px;
   text-align: center;
   color: black;
@@ -92,6 +92,19 @@ button[type="BtnR"]{
   1px 1px 0 #000;
 }
 
+button[type="BtnAsk"]{
+font-family: 'JasmineUPC', sans-serif;
+background-image: url(A1.jpg); 
+background-size: 27.5px 30px;
+background-position: 0%;
+border: transparent;
+border-radius: 15px;
+cursor: pointer;  
+margin-left: 735px;
+width: 27.5px;
+height: 30px;
+}
+
 .delete-btn {
   background-color: transparent;
   cursor: pointer; 
@@ -109,7 +122,10 @@ button[type="BtnR"]{
 button[type="clearABtn"]{
   font-family: 'JasmineUPC', sans-serif;
   font-size: 17px; 
-  background-color: #CC9900;
+  background-color: white;
+  border-radius: 7.5px;
+  cursor: pointer;
+  border: transparent;
 }
 
 p[type="in"] {
