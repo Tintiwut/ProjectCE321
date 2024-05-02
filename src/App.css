@@ -1,7 +1,7 @@
 
 body {
   z-index: -1;
-  background-image: url(../src/bg7.gif);
+  background-image: url(bg7.gif);
   background-size: 1500px 768px;
   font-family: 'JasmineUPC', sans-serif;
   font-size: 25px;
@@ -93,16 +93,16 @@ button[type="BtnR"]{
 }
 
 button[type="BtnAsk"]{
-font-family: 'JasmineUPC', sans-serif;
-background-image: url(../src/A1.jpg); 
-background-size: 27.5px 30px;
-background-position: 0%;
-border: transparent;
-border-radius: 15px;
-cursor: pointer;  
-margin-left: 735px;
-width: 27.5px;
-height: 30px;
+  font-family: 'JasmineUPC', sans-serif;
+  background-image: url(A1.jpg); 
+  background-size: 27.5px 30px;
+  background-position: 0%;
+  border: transparent;
+  border-radius: 15px;
+  cursor: pointer;  
+  margin-left: 735px;
+  width: 27.5px;
+  height: 30px;
 }
 
 .delete-btn {
